@@ -18,7 +18,35 @@ Fundamentals Exercise 1: CLI
          b. Use $ cat print contents of file
          c. Use $ grep to search for a word inside file
 
-Example Output (pwd):
-    1. Cadens-MacBook-Pro:CodingNomads cadenmackenzie$ pwd
-       /Users/cadenmackenzie/Documents/CodingNomads
-
+Answers
+    1. Nicolas-MacBook:~ nicola$ cd Documents/CodingNomadsOnline/
+    2. Nicolas-MacBook:CodingNomadsOnline nicola$ mkdir Terminal_testing
+    3. a. Nicolas-MacBook:Terminal_testing nicola$ touch file1.txt
+          Nicolas-MacBook:Terminal_testing nicola$ touch file2.txt
+          Nicolas-MacBook:Terminal_testing nicola$ touch file3.txt
+       b. Nicolas-MacBook:Terminal_testing nicola$ pwd
+          /Users/nicola/Documents/CodingNomadsOnline/Terminal_testing
+       c. Nicolas-MacBook:Terminal_testing nicola$ ls -al
+          total 0
+          drwxr-xr-x  5 nicola  staff  160 Apr 27 12:37 .
+          drwxr-xr-x  6 nicola  staff  192 Apr 27 12:37 ..
+          -rw-r--r--  1 nicola  staff    0 Apr 27 12:35 file1.txt
+          -rw-r--r--  1 nicola  staff    0 Apr 27 12:35 file2.txt
+          -rw-r--r--  1 nicola  staff    0 Apr 27 12:35 file3.txt
+    4. no problem #4?
+    5. Nicolas-MacBook:Terminal_testing nicola$ mkdir newFolder
+    6. Nicolas-MacBook:Terminal_testing nicola$ mv file1.txt newFolder/
+    7. Nicolas-MacBook:Terminal_testing nicola$ mv file2.txt newFolder/
+    8. a. Nicolas-MacBook:Terminal_testing nicola$ rm file3.txt
+       b. Nicolas-MacBook:Terminal_testing nicola$ rm -r newFolder/
+    9. a. Nicolas-MacBook:Terminal_testing nicola$ vim test.txt
+       b. Nicolas-MacBook:Terminal_testing nicola$ cat test.txt
+          cat
+          dog
+          frog
+          fish
+          horse
+          lion
+          hippo
+       c. Nicolas-MacBook:Terminal_testing nicola$ grep lion test.txt
+          lion

@@ -32,3 +32,43 @@ Cloning repository from Github
     3. Create new repository on Github
     4. Add new remote on local machine
     5. Push to new Github repository
+
+
+Answers
+    Initializing git folder
+        1. Nicolas-MacBook:CodingNomadsOnline nicola$ mkdir git_practice
+        2. a. Nicolas-MacBook:git_practice nicola$ git init
+              Initialized empty Git repository in /Users/nicola/Documents/CodingNomadsOnline/git_practice/.git/
+           b. Nicolas-MacBook:git_practice nicola$ touch file.txt
+           c. Nicolas-MacBook:git_practice nicola$ git add file.txt
+           d. Nicolas-MacBook:git_practice nicola$ git commit -m "commiting the file"
+           c#2. created new repository
+           d#2. Nicolas-MacBook:git_practice nicola$ git remote add origin https://github.com/Tesla91/git_practice.git
+           d#3. Nicolas-MacBook:git_practice nicola$ git push -u origin master
+           e. i. Nicolas-MacBook:git_practice nicola$ touch practice.txt
+              ii. Nicolas-MacBook:git_practice nicola$ git add practice.txt
+              iii. Nicolas-MacBook:git_practice nicola$ git commit -m "practicing git"
+              iv. Nicolas-MacBook:git_practice nicola$ git push
+
+
+    Adding a remote
+        1. New repo created
+        2. Nicolas-MacBook:git_practice nicola$ git remote add practice2 https://github.com/Tesla91/git_practice_2.git
+        3. Nicolas-MacBook:git_practice nicola$ git push practice2
+
+    Cloning repository from Github
+        1. Found a gameboy emulator for java 8 on Github
+        2. Nicolas-MacBook:emulator nicola$ git clone https://github.com/trekawek/coffee-gb.git
+        3. created coffee_gb repo on my github
+        4. Nicolas-MacBook:coffee-gb nicola$ git remote add nicola https://github.com/Tesla91/coffee_gb.git
+        5. Nicolas-MacBook:coffee-gb nicola$ git push -u nicola master
+            Enumerating objects: 3111, done.
+            Counting objects: 100% (3111/3111), done.
+            Delta compression using up to 4 threads
+            Compressing objects: 100% (787/787), done.
+            Writing objects: 100% (3111/3111), 4.24 MiB | 1.15 MiB/s, done.
+            Total 3111 (delta 1491), reused 3111 (delta 1491), pack-reused 0
+            remote: Resolving deltas: 100% (1491/1491), done.
+            To https://github.com/Tesla91/coffee_gb.git
+             * [new branch]      master -> master
+            Branch 'master' set up to track remote branch 'master' from 'nicola'.
