@@ -1,5 +1,4 @@
 package labs_examples.conditions_loops.labs;
-import java.sql.SQLOutput;
 import java.util.Scanner;
 /**
  * Conditions and Loops Exercise 3: Months of the year
