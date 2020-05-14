@@ -9,5 +9,21 @@ package labs_examples.arrays.labs;
  */
 
 public class Exercise_05 {
+    public static void main(String[] args) {
+
+        int[] newArray = new int[6];
+
+        for (int  x = 0; x < newArray.length; x++){
+            newArray[x] = x * 3;
+        }
+
+        for (int y = newArray.length - 1; y >= 0; y--){
+            if (y % 2 == 0){
+                System.out.println(newArray[y]);
+            }
+        }
+
+    }
+
 
 }
