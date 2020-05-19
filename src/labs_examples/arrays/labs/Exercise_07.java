@@ -1,5 +1,7 @@
 package labs_examples.arrays.labs;
 
+import java.util.ArrayList;
+
 /**
  *  ArrayLists
  *
@@ -10,4 +12,41 @@ package labs_examples.arrays.labs;
  *
  */
 public class Exercise_07 {
+
+    public static void main(String[] args) {
+
+        ArrayList<String> myList = new ArrayList();
+
+        myList.add("Cats");
+        myList.add("Dogs");
+        myList.add("Horses");
+        myList.add("Turtles");
+        myList.add("Figs");
+
+        System.out.println("Here are some types of animals: ");
+
+        for( String x : myList){
+
+            System.out.println(x + " ");
+
+        }
+
+        System.out.println();
+        System.out.println("Whoops Figs are not a type of animal.");
+
+        myList.remove("Figs");
+
+        System.out.println();
+        System.out.println("Here is our revised list: ");
+
+        for( String x : myList){
+
+            System.out.println(x + " ");
+
+        }
+
+
+
+    }
+
 }
