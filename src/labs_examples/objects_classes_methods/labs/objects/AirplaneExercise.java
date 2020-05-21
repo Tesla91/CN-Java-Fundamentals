@@ -15,6 +15,9 @@ class AirplaneExercise {
 
 
         System.out.println(myAirplane.toString());
+        System.out.println(flightCrew.toString());
+        System.out.println(flightPath.toString());
+        System.out.println(passengers.toString());
 
     }
 
