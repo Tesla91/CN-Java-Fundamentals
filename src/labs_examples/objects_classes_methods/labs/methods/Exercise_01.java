@@ -9,63 +9,51 @@ public class Exercise_01 {
 
         // please create the methods as instructed below then
         // call each of those methods from here, within the main()
-        System.out.println(multiply());
-        System.out.println(divide());
-        System.out.println(joke());
-        System.out.println(yearsInSeconds());
-        System.out.println(varags());
+        System.out.println(multiply(3,6));
+        System.out.println(divide(34, 2));
+        joke();
+        System.out.println(yearsInSeconds(9));
+        int[] newArray = new int[7];
+        System.out.println(varags(newArray));
 
     }
 
 
     // 1) Create a static multiply() method below that takes two int arguments (int a, int b) and
     //    returns the result of a * b
-    public static int multiply(){
+    public static int multiply(int a, int b){
 
-        int a = 4;
-        int b = 7;
-
-        int result = a * b;
-        return result;
-
+        return a * b;
     }
 
     // 2) Create a static divide() method below that takes two int arguments (int a, int b) and
     //    returns the result of a / b
-    public static int divide(){
+    public static int divide(int a, int b){
 
-        int a = 9;
-        int b = 5;
-
-        int result = a / b;
-        return result;
+        return a / b;
     }
 
     // 3) Create a static void method that will print of joke of your choice to the console
-    public static String joke(){
+    public static void joke(){
+
         String myJoke = "99 little bugs in the code, 99 little bugs in the code. " +
                 "Take one down, patch it around 117 little bugs in the code.";
-        return myJoke;
+        System.out.println(myJoke);
     }
 
     // 4) Create a static method that takes in a number in years (int years) as an argument
     //    and returns the number of seconds that number in years represents
-    public static int yearsInSeconds(){
-        int numOfYears = 63;
-        int yearsInSeconds = numOfYears * 31536000;
-        return yearsInSeconds;
+    public static int yearsInSeconds(int years){
+
+        return years * 31536000;
     }
 
 
     // 5) Create a varargs method that will return the length of the varargs array passed in
 
-    public static int varags(){
+    public static int varags(int[] varags){
 
-        int[] varags = new int[5];
-
-        int length = varags.length;
-
-        return length;
+        return varags.length;
     }
 
 
