@@ -14,7 +14,7 @@ public class Exercise_01 {
         joke();
         System.out.println(yearsInSeconds(9));
         int[] newArray = new int[7];
-        System.out.println(varags(newArray));
+        System.out.println(myVarags(newArray));
 
     }
 
@@ -51,9 +51,9 @@ public class Exercise_01 {
 
     // 5) Create a varargs method that will return the length of the varargs array passed in
 
-    public static int varags(int[] varags){
+    public static int myVarags(int...v){
 
-        return varags.length;
+        return v.length;
     }
 
 
